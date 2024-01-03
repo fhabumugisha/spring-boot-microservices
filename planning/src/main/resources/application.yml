@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: planning
+  datasource:
+    username: 'buseni'
+    url: jdbc:postgresql://localhost:5432/planning
+    password: 'password'
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format-sql: true
+      hibernate:
+        ddl-auto: update
+        show-sql: true
